@@ -13,11 +13,13 @@
 
 Route::get('/', function () {
     return view('welcome');
+//    return App::environment();
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 
 
 //, 'middleware' => ['customer']
