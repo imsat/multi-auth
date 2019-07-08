@@ -75,6 +75,8 @@
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>
                         @endif
+                        <a class="nav-link" href="{{ route('customer.login') }}">{{ __('Customer Login') }}</a>
+                        <a class="nav-link" href="{{ route('customer.register') }}">{{ __('Customer Register') }}</a>
                     @endauth
                 </div>
             @endif
